@@ -1,0 +1,22 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# PHP7.2
+# @see https://wiki.mydevil.net/PHP
+AddType application/x-httpd-php72 .php
+
+# https
+
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://farerskiekadry.pl/$1 [R,L]
+
