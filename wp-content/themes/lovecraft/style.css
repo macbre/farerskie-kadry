@@ -266,12 +266,12 @@ body a,
 
 
 .header {
-	background: #eee url(/wp-content/uploads/2018/11/Faroe_Islands_stub.png) no-repeat calc(50% - 435px) 0px;
+	background: #eee url(/wp-content/uploads/2018/11/Faroe_Islands_stub.png) no-repeat calc(50% - 475px) 0px;
 	padding: 35px 0; 
 }
 
 .navigation {
-	background: #fff url(/wp-content/uploads/2018/11/Faroe_Islands_stub.png) no-repeat calc(50% - 435px) -149px; /* header -149px */
+	background: #fff url(/wp-content/uploads/2018/11/Faroe_Islands_stub.png) no-repeat calc(50% - 475px) -149px; /* header -149px */
 	border-top: none !important;
 	/* move shadow above the image below */
 	position: relative;
@@ -284,7 +284,7 @@ body a,
 }
 
 .header-image-overlay {
-	background: transparent url(/wp-content/uploads/2018/11/Faroe_Islands_stub.png) no-repeat calc(50% - 435px) -212px; /* nav -63px */
+	background: transparent url(/wp-content/uploads/2018/11/Faroe_Islands_stub.png) no-repeat calc(50% - 475px) -212px; /* nav -63px */
 	height: 535px;
     position: absolute;
     width: 100%;
@@ -3102,10 +3102,17 @@ div.comment { margin-top: 25px; }
 }
 
 /** fb **/
+/**
 .mashsb-container {
 	display: inline-block;
 	padding: 0;
 	padding-left: 30px;
+}
+
+body.page **/.mashsb-container {
+	position: absolute;
+    right: 15px;
+    top: 10px;
 }
 
 /** gallery **/

@@ -30,6 +30,8 @@
 
 								<?php endif; ?>
 
+								<?php echo do_shortcode("[mashshare]"); ?>
+
 							</div><!-- .post-header -->
 
 							<?php if ( get_the_content() ) : ?>
