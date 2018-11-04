@@ -20,3 +20,7 @@ AddType application/x-httpd-php72 .php
 RewriteCond %{SERVER_PORT} 80 
 RewriteRule ^(.*)$ https://farerskiekadry.pl/$1 [R,L]
 
+# inne domeny
+RewriteCond %{HTTP_HOST} ^(www|blog).farerskiekadry.pl$ [NC]
+RewriteRule ^(.*)$ https://farerskiekadry.pl/$1 [R=301,QSA,L]
+
