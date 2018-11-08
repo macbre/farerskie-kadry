@@ -1076,7 +1076,7 @@ figure {
 }
 
 .post-content img {
-	border: 1px solid #ddd;
+	/**border: 1px solid #ddd;**/
 	padding: 5px;
 }
 
@@ -2015,7 +2015,7 @@ div.comment { margin-top: 25px; }
 
 .widget + .widget { 
 	padding-top: 40px;
-	border-top: 1px solid #ddd;
+	/*border-top: 1px solid #ddd;*/
 	margin-top: 40px;
 }
 
@@ -2025,10 +2025,8 @@ div.comment { margin-top: 25px; }
 	border-bottom: 2px solid rgba(31, 75, 108, 0.5) !important;
 	margin-bottom: 10px;
 	font-family: 'Lato', Helvetica, sans-serif;
-	font-size: 0.78em;
-	font-weight: 900;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+	font-size: 0.95em;
+	font-weight: bold;
 }
 
 

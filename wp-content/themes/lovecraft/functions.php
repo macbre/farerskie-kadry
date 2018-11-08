@@ -35,7 +35,7 @@ if ( ! function_exists( 'lovecraft_setup' ) ) {
 		// Custom header
 		$args = array(
 			'width'         => 1920,
-			'height'        => 444,
+			'height'        => 500,
 			'default-image' => get_template_directory_uri() . '/images/header.jpg',
 			'uploads'       => true,
 			'header-text'  	=> false,
