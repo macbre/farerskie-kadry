@@ -103,7 +103,7 @@ body {
 	border: none;
 	color: #111;
 	background: #fafafa;
-	font-family: 'Playfair Display', 'Georgia', serif;
+	font-family: 'Amiri', 'Georgia', serif;
 	font-size: 17px;
 	-webkit-font-smoothing: antialiased;
 }
@@ -265,17 +265,19 @@ body a,
 /* -------------------------------------------------------------------------------- */
 
 
+/* https://farerskiekadry.pl/wp-content/uploads/2018/11/Faroe_Islands_stub_opacity.png */
 .header {
-	background: #eee url(/wp-content/uploads/2018/11/Faroe_Islands_stub.png) no-repeat calc(50% - 475px) 0px;
+	background: #eee url(/wp-content/uploads/2018/11/Faroe_Islands_stub_opacity.png) no-repeat calc(50% - 475px) 0px;
 	padding: 35px 0; 
 }
 
 .navigation {
-	background: #fff url(/wp-content/uploads/2018/11/Faroe_Islands_stub.png) no-repeat calc(50% - 475px) -149px; /* header -149px */
+	background: #fff url(/wp-content/uploads/2018/11/Faroe_Islands_stub_opacity.png) no-repeat calc(50% - 475px) -149px; /* header -149px */
 	border-top: none !important;
 	/* move shadow above the image below */
 	position: relative;
 	z-index: 2;
+	font-size: 1.2em;
 }
 
 .main-menu {
@@ -284,7 +286,7 @@ body a,
 }
 
 .header-image-overlay {
-	background: transparent url(/wp-content/uploads/2018/11/Faroe_Islands_stub.png) no-repeat calc(50% - 475px) -212px; /* nav -63px */
+	background: transparent url(/wp-content/uploads/2018/11/Faroe_Islands_stub_opacity.png) no-repeat calc(50% - 475px) -212px; /* nav -63px */
 	height: 535px;
     position: absolute;
     width: 100%;
@@ -630,7 +632,8 @@ body a,
 .post-title a { color: #111; }
 .post-title a:hover { 
 	color: #111;
-	text-decoration: underline; 
+	text-decoration: underline;
+	letter-spacing: -2px;
 }
 
 /* Post Meta */
@@ -835,7 +838,7 @@ body a,
 
 
 .post-content { 
-    font-family: Spectral;
+    font-family: Amiri;
     font-size: 1.2em;
     letter-spacing: -1px;
 }
@@ -1136,7 +1139,7 @@ figure {
 .post-content .gallery-caption,
 .post-content figcaption {
 	margin: 4px auto 16px;
-	font-size: 1.1rem;
+	font-size: 1.25rem;
 	line-height: 160%; 
 	color: #444;
 	text-align: center;
