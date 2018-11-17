@@ -111,7 +111,7 @@ if ( ! function_exists( 'lovecraft_load_style' ) ) {
 			$google_fonts = _x( 'on', 'Google Fonts: on or off', 'lovecraft' );
 
 			if ( 'off' !== $google_fonts ) {
-				wp_register_style( 'lovecraft_googlefonts', '//fonts.googleapis.com/css?family=Lato:400,700,900|Playfair+Display:400,700,400italic|Amiri&subset=latin-ext' );
+				wp_register_style( 'lovecraft_googlefonts', '//fonts.googleapis.com/css?family=Lato:400,700,900|Kalam:300|Vollkorn:400,700&subset=latin-ext' );
 
 				$dependencies[] = 'lovecraft_googlefonts';
 
@@ -145,7 +145,7 @@ if ( ! function_exists( 'lovecraft_add_editor_styles' ) ) {
 		$google_fonts = _x( 'on', 'Google Fonts: on or off', 'lovecraft' );
 
 		if ( 'off' !== $google_fonts ) {
-			$font_url = '//fonts.googleapis.com/css?family=Lato:400,700,900|Playfair+Display:400,700,400italic|Amiri&subset=latin-ext';
+			$font_url = '//fonts.googleapis.com/css?family=Lato:400,700,900|Kalam:300|Vollkorn:400,700&subset=latin-ext';
 			add_editor_style( str_replace( ', ', '%2C', $font_url ) );
 		}
 
