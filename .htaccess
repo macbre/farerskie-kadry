@@ -1,3 +1,7 @@
+# inne domeny
+RewriteBase / 
+RewriteCond %{HTTP_HOST} !^farerskiekadry.pl$ [NC]
+RewriteRule ^(.*)$ https://farerskiekadry.pl/$1 [R=301,QSA,L]
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
@@ -14,13 +18,3 @@ RewriteRule . /index.php [L]
 # PHP7.2
 # @see https://wiki.mydevil.net/PHP
 AddType application/x-httpd-php72 .php
-
-# https
-
-RewriteCond %{SERVER_PORT} 80 
-RewriteRule ^(.*)$ https://farerskiekadry.pl/$1 [R,L]
-
-# inne domeny
-RewriteCond %{HTTP_HOST} ^(www|blog).farerskiekadry.pl$ [NC]
-RewriteRule ^(.*)$ https://farerskiekadry.pl/$1 [R=301,QSA,L]
-
