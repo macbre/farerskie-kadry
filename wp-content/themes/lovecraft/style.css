@@ -104,7 +104,7 @@ body {
 	color: #111;
 	background: #fafafa;
 	font-family: 'Vollkorn', 'Georgia', serif;
-	font-size: 17px;
+	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -400,7 +400,7 @@ body a,
 .main-menu > li + li:before {
 	content: "/";
 	display: block;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 15px;
 	font-weight: 700;
 	color: #bbb;
@@ -625,10 +625,10 @@ body a,
 
 .post-title {
 	font-family: Vollkorn, Georgia, serif;
-	font-size: 4.2em;
+	font-size: 3em;
 	line-height: 130%;
 	color: #111;
-	letter-spacing: -3px;
+	letter-spacing: -2px;
 }
 
 .post-title a { color: #111; }
@@ -647,8 +647,8 @@ body a,
 
 .post-meta p { 
 	display: inline-block;
-	font-family: 'Lato', Helvetica, sans-serif;
-	font-size: 0.75em;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: .8em;
 	line-height: 200%;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -683,7 +683,7 @@ body a,
 	display: inline-block;
 	margin-bottom: 15px;
 	background: #eee;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.75em;
 	line-height: 1;
 	font-weight: 900;
@@ -731,7 +731,7 @@ body a,
 	padding: 5px 6px 6px 3px;
 	margin: 0 3px 8px 11px;
 	background: #ddd;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.7rem !important;
 	line-height: 1;
 	font-weight: 900;
@@ -807,7 +807,7 @@ body a,
 	padding-bottom: 2px;
 	border-bottom: 2px solid #ccc;
 	margin-bottom: 8px;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.8rem;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -840,7 +840,7 @@ body a,
 
 .post-content { 
     font-family: 'Vollkorn';
-    font-size: 1.1em;
+    font-size: 1.15em;
     letter-spacing: -.5px;
 }
 
@@ -881,7 +881,7 @@ body a,
 .post-content h5 { font-size: 1.1em; }
 
 .post-content h6 {
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.8rem;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -909,7 +909,7 @@ body a,
 	letter-spacing: 1px;
 	color: #111;
 	-webkit-appearance: none;
-	font-family: Lato;
+	font-family: Raleway;
     opacity: 0.5;
 }
 
@@ -949,7 +949,7 @@ body a,
 .post-content blockquote cite {
 	display: block;
 	margin-top: 1.1em;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.75em;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -1201,7 +1201,7 @@ figure {
 }
 
 .post-content fieldset legend {
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.8rem;
 	line-height: 1;
 	font-weight: 900;
@@ -1214,13 +1214,13 @@ figure {
 
 .post-content label {
 	font-size: 1rem;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-weight: 700;
 }
 
 .post-content input,
 .post-content textarea { 
-	font-family: 'Lato', Helvetica, sans-serif; 
+	font-family: 'Raleway', Helvetica, sans-serif; 
 }
 
 .post-content input[type="text"],
@@ -1343,7 +1343,7 @@ figure {
 .post-content .wp-block-file__button,
 .post-content .wp-block-button__link {
 	border-radius: 4px;
-	font-family: Lato, sans-serif;
+	font-family: Raleway, sans-serif;
 	font-weight: 700;
 	padding: .8em 1.4em;
 }
@@ -1463,7 +1463,7 @@ figure {
 /* Block: Cover Image --------------------------------------- */
 
 .wp-block-cover-image {
-	font-family: Lato, sans-serif;
+	font-family: Raleway, sans-serif;
 }
 
 .wp-block-cover-image.alignfull {
@@ -1496,7 +1496,7 @@ figure {
 	background: rgba( 0, 0, 0, 0.05 );
 	border-radius: 4px;
 	display: flex;
-	font-family: Lato, sans-serif;
+	font-family: Raleway, sans-serif;
 	justify-content: space-between;
 	margin: 30px 0;
 	padding: 20px;
@@ -1545,7 +1545,7 @@ figure {
 }
 
 .comments-title-link { 
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.75em;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -1643,7 +1643,7 @@ div.comment { margin-top: 25px; }
 
 .comment-meta { 
 	margin-top: 23px;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.7em;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -1672,7 +1672,7 @@ div.comment { margin-top: 25px; }
 	padding-bottom: 2px;
 	margin-bottom: 20px;
 	border-bottom: 2px solid #ca2017;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.75em;
 	font-weight: 900;
 	color: #111;
@@ -1698,7 +1698,7 @@ div.comment { margin-top: 25px; }
 .comments-nav { margin-top: 30px; }
 
 .comments-nav a {
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.9em;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1730,7 +1730,7 @@ div.comment { margin-top: 25px; }
 .comment-respond form label { 
 	display: block;
 	margin-bottom: 8px;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.8rem;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -1789,7 +1789,7 @@ div.comment { margin-top: 25px; }
 	margin: 0;
 	background: #fafafa;
 	border: 1px solid #ddd;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 1rem;
 	color: #111;
 }
@@ -1811,7 +1811,7 @@ div.comment { margin-top: 25px; }
 	background: #111;
 	border: none;
 	border-radius: 3px;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.8rem;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -1837,7 +1837,7 @@ div.comment { margin-top: 25px; }
 
 .commentlist #cancel-comment-reply-link {
 	margin-left: 3px;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.8rem;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -1879,7 +1879,7 @@ div.comment { margin-top: 25px; }
 	background: #fff;
 	border: 1px solid #ddd;
 	border-radius: 0;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.9rem;
 	color: #111;
 }
@@ -1929,7 +1929,7 @@ div.comment { margin-top: 25px; }
 }
 
 .page-title h4 {
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.75em;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -1951,7 +1951,7 @@ div.comment { margin-top: 25px; }
 
 .archive-navigation p {
 	display: inline;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.9em;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1987,7 +1987,7 @@ div.comment { margin-top: 25px; }
 	padding: 15px 20px;
 	border-radius: 3px;
 	background: #111;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -2025,7 +2025,7 @@ div.comment { margin-top: 25px; }
 	padding-bottom: 10px;
 	border-bottom: 2px solid rgba(31, 75, 108, 0.5) !important;
 	margin-bottom: 10px;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 0.95em;
 	font-weight: bold;
 }
@@ -2035,7 +2035,7 @@ div.comment { margin-top: 25px; }
 
 
 .widget-content { 
-	font-family: 'Lato', Helvetica, sans-serif; 
+	font-family: 'Raleway', Helvetica, sans-serif; 
 	font-size: 0.95em;
 }
 
@@ -2133,7 +2133,7 @@ div.comment { margin-top: 25px; }
 
 .widget_rss li a {
 	display: block;
-	font-family: Lato, sans-serif;
+	font-family: Raleway, sans-serif;
 	font-size: 1em;
 	line-height: 120%;
 	color: #111;
@@ -2337,7 +2337,7 @@ div.comment { margin-top: 25px; }
 
 .credits p {
 	padding-bottom: 5px;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	color: #fff;
 	font-size: 12px;
 	font-weight: 700;
@@ -2545,7 +2545,7 @@ div.comment { margin-top: 25px; }
 		background: #fff;
 		border: 1px solid #eee;
 		border-radius: 0;
-		font-family: 'Lato', Helvetica, sans-serif;
+		font-family: 'Raleway', Helvetica, sans-serif;
 		font-size: 0.9rem;
 	}
 	
@@ -3126,7 +3126,7 @@ body.page **/.mashsb-container {
 }
 
 .mashsb-container .text {
-	font-family: Lato;
+	font-family: Raleway;
     font-size: 1.05em;
     font-weight: bold;
     line-height: 17px;
@@ -3138,7 +3138,7 @@ body.page **/.mashsb-container {
     margin: 0;
     padding-bottom: 10px;
     font-size: 0.7em;
-    font-family: Lato;
+    font-family: Raleway;
     text-transform: uppercase;
 }
 

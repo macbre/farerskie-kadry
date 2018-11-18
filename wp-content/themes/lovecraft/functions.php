@@ -1,5 +1,6 @@
 <?php
 
+define(  'LOVECRAFT_FONTS', 'Raleway:300,700|Kalam:300|Vollkorn:400,700' );
 
 /* ---------------------------------------------------------------------------------------------
    THEME SETUP
@@ -111,7 +112,7 @@ if ( ! function_exists( 'lovecraft_load_style' ) ) {
 			$google_fonts = _x( 'on', 'Google Fonts: on or off', 'lovecraft' );
 
 			if ( 'off' !== $google_fonts ) {
-				wp_register_style( 'lovecraft_googlefonts', '//fonts.googleapis.com/css?family=Lato:400,700,900|Kalam:300|Vollkorn:400,700&subset=latin-ext' );
+				wp_register_style( 'lovecraft_googlefonts', '//fonts.googleapis.com/css?family=' . LOVECRAFT_FONTS . 'subset=latin-ext' );
 
 				$dependencies[] = 'lovecraft_googlefonts';
 
@@ -145,7 +146,7 @@ if ( ! function_exists( 'lovecraft_add_editor_styles' ) ) {
 		$google_fonts = _x( 'on', 'Google Fonts: on or off', 'lovecraft' );
 
 		if ( 'off' !== $google_fonts ) {
-			$font_url = '//fonts.googleapis.com/css?family=Lato:400,700,900|Kalam:300|Vollkorn:400,700&subset=latin-ext';
+			$font_url = '//fonts.googleapis.com/css?family=' . LOVECRAFT_FONTS . '&subset=latin-ext';
 			add_editor_style( str_replace( ', ', '%2C', $font_url ) );
 		}
 
@@ -772,7 +773,7 @@ if ( ! function_exists( 'lovecraft_block_editor_styles' ) ) :
 		if ( 'off' !== $google_fonts ) {
 
 			// Register Google Fonts
-			wp_register_style( 'lovecraft-block-editor-styles-font', '//fonts.googleapis.com/css?family=Lato:400,700,900|Playfair+Display:400,700,400italic', false, 1.0, 'all' );
+			wp_register_style( 'lovecraft-block-editor-styles-font', '//fonts.googleapis.com/css?family=' . LOVECRAFT_FONTS, false, 1.0, 'all' );
 			$dependencies[] = 'lovecraft-block-editor-styles-font';
 
 		}
