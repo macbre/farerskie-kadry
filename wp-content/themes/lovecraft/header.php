@@ -134,11 +134,12 @@
 			$post_image = $thumb['0'];
 			?>
 
-			<div class="header-image bg-image" style="background-image: url(<?php echo esc_url( $post_image ); ?>)">
+			<script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js" async></script>
+			<div class="header-image bg-image jarallax" style="background-image: url(<?php echo esc_url( $post_image ); ?>)" data-jarallax><?php /**
 
 				<?php the_post_thumbnail( 'post-image' ); ?>
 
-			</div>
+			**/?></div>
 
 		<?php else :
 

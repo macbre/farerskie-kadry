@@ -268,7 +268,7 @@ body a,
 /* https://farerskiekadry.pl/wp-content/uploads/2018/11/Faroe_Islands_stub_opacity.png */
 .header {
 	background: #eee url(/wp-content/uploads/2018/11/Faroe_Islands_stub_opacity.png) no-repeat calc(50% - 475px) 0px;
-	padding: 26px 0; 
+	padding: 28px 0; 
 }
 
 .navigation {
@@ -327,11 +327,11 @@ body a,
 .blog-title a:hover { color: #CA2017; }
 
 .blog-tagline { 
+	font-family: Raleway, sans-serif;
 	margin-top: 15px;
 	font-size: 1.1em;
 	line-height: 120%;
 	text-align: center; 
-	font-style: italic;
 }
 
 
@@ -363,11 +363,10 @@ body a,
 	visibility: hidden;
 }
 
-.has-featured-image .header-image {
-	filter: grayscale(50%);
-    opacity: 0.9;
+.jarallax {
 	max-height: 500px;
 	background-attachment: fixed;
+	height: 450px;
 }
 
 
@@ -817,7 +816,7 @@ body a,
 
 .post-navigation h4 {
 	display: block;
-	font-size: 1em;
+	font-size: 1.25em;
 	line-height: 130%;
 	font-weight: 700;
 }
@@ -2026,7 +2025,6 @@ div.comment { margin-top: 25px; }
 	border-bottom: 2px solid rgba(31, 75, 108, 0.5) !important;
 	margin-bottom: 10px;
 	font-family: 'Raleway', Helvetica, sans-serif;
-	font-size: 0.95em;
 	font-weight: bold;
 }
 
@@ -2269,6 +2267,7 @@ div.comment { margin-top: 25px; }
 	font-family: Vollkorn, Georgia, serif;
 	line-height: 140%;
 	font-weight: 700;
+	font-size: 1.2em;
 	color: #111;
 }
 
@@ -3146,18 +3145,37 @@ body.page **/.mashsb-container {
 .post-content blockquote:after {
     content: '”';
     width: 90px;
-    font-size: 272px;
-    line-height: 0.7em;
+    font-size: 150px;
+    line-height: 1em;
     font-weight: 700;
     font-style: normal;
     text-align: center;
     color: #ca2017;
     position: absolute;
-    top: 75px;
+    top: 30px;
     left: 0px;
     opacity: 0.1;
 }
 
 blockquote {
 	    overflow: hidden;
+}
+
+/* book */
+body {
+	background: #fdfdfd;
+}
+
+#book-cover {
+    position: relative;
+    left: -95px;
+    z-index: -2;
+    transform: rotate(25deg);
+	max-width: none;
+	transition-property: left;
+	transition-delay: 2s;
+}
+
+#book-cover:hover {
+	left: -75px;
 }
