@@ -364,9 +364,8 @@ body a,
 }
 
 .jarallax {
-	max-height: 500px;
 	background-attachment: fixed;
-	height: 450px;
+	height: 55vh;
 }
 
 
