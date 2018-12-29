@@ -646,18 +646,25 @@ body a,
 .post-meta p { 
 	display: inline-block;
 	font-family: 'Raleway', Helvetica, sans-serif;
-	font-size: .8em;
+	font-size: .85em;
 	line-height: 200%;
-	font-weight: 900;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+	font-weight: bold;
+/**	text-transform: uppercase;
+	letter-spacing: 1px;**/
 	color: #666;
 }
 
 .post-meta p + p:before {
 	content: "/";
-	margin: 0 15px 0 11px;
+	margin: 0 5px;
 	color: #ccc;
+	font-size: 1.75em;
+	vertical-align: middle;
+	font-weight: normal;
+}
+
+.post-meta p + p.post-date:before {
+	display: none;
 }
 
 .post-meta a { 
