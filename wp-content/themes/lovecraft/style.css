@@ -3201,9 +3201,16 @@ padding: 0 15px;
     border-radius: 32px;
     border: solid 3px #fff;
     display: inline-block;
+    margin-right: 10px;
     vertical-align: middle;
 }
 
 .post-author a {
 border: none;
+}
+
+@media (max-width: 500px) {
+	p.post-author {
+	    margin-top: -38px;
+	}
 }

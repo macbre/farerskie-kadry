@@ -39,6 +39,7 @@
 									<?php echo do_shortcode("[mashshare]"); ?>
 
 									<meta itemprop="publisher" content="farerskiekadry.pl">
+									<meta itemprop="license" content="https://creativecommons.org/licenses/by-sa/4.0/">
 								</div>
 
 							</div><!-- .post-header -->
