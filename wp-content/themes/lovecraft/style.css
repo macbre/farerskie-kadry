@@ -2652,7 +2652,7 @@ div.comment { margin-top: 25px; }
 	/* Navigation --------------------------------------- */
 	
 	
-	.navigation { border-top: none;  }
+	.navigation { border-top: none; height: auto }
 	
 	.toggles {
 		background: none;

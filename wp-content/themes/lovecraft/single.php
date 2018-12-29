@@ -51,8 +51,8 @@
 			unset($data['post_content']);
 ?>
 									<p class="geo" itemprop="contentLocation" itemscope itemtype="https://schema.org/Place">
+										<a href="<?= htmlspecialchars($permalink) ?>" target="_blank" title="Otwórz mapę"><?= htmlspecialchars($address) ?></a>
 										<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
-											<a href="<?= htmlspecialchars($permalink) ?>" target="_blank" title="Otwórz mapę"><?= htmlspecialchars($address) ?></a>
 											<meta itemprop="latitude" content="<?= round($data['latitude'], 4) ?>">
 											<meta itemprop="longitude" content="<?= round($data['longitude'], 4) ?>">
 										</span>
