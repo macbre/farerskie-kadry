@@ -30,7 +30,7 @@
 
 			<div class="post-meta">
 
-				<?php /** <p class="post-author"><span><?php _e( 'By', 'lovecraft' ); ?> </span><?php the_author_posts_link(); ?></p> **/ ?>
+				<?php /**<p class="post-author"><span><?php _e( 'By' ); ?> </span><?php the_author_posts_link(); ?></p> **/ ?>
 
 				<p class="post-date"><!--<span><?php _e( 'On', 'lovecraft' ); ?> </span>--><a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></p>
 

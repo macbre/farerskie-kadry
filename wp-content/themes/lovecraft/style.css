@@ -3178,3 +3178,32 @@ body {
 #book-cover:hover {
 	left: -75px;
 }
+
+/* author meta */
+.post-meta {
+margin-top: 30px;
+}
+
+p.post-author {
+display: block;
+margin-bottom: 1em;
+margin-top: -50px;
+text-align: center;
+}
+
+.post-author span {
+background: #fff;
+display: inline-block;
+padding: 0 15px;
+}
+
+.post-author .avatar {
+    border-radius: 32px;
+    border: solid 3px #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.post-author a {
+border: none;
+}

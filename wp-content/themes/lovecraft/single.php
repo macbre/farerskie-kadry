@@ -14,25 +14,31 @@
 
 					<div id="post-<?php the_ID(); ?>" <?php post_class( 'single' ); ?>>
 
-						<div class="post-inner">
+						<div class="post-inner" itemscope itemtype="http://schema.org/Article">
 
 							<div class="post-header">
 
-								<h1 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+								<h1 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" itemprop="name"><?php the_title(); ?></a></h1>
 
 								<div class="post-meta">
+									<p class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span>
+										<a href="mailto:<?= htmlspecialchars(get_the_author_meta('user_email')) ?>" itemprop="name" content="<?= htmlspecialchars(get_the_author()) ?>">
+											<?= get_avatar(get_the_author_meta('ID'), 64) ?>
+											<?= get_the_author() ?>
+										</a>
+									</span></p>
 
-									<?php /** <p class="post-author"><span><?php _e( 'By', 'lovecraft' ); ?> </span><?php the_author_posts_link(); ?></p> **/ ?>
-
-									<p class="post-date"><!--<span><?php _e( 'On', 'lovecraft' ); ?> </span>--><a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></p>
+									<p class="post-date"><!--<span><?php _e( 'On', 'lovecraft' ); ?> </span>--><time datetime="<?= the_time('r') ?>" itemprop="datePublished"><a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></time></p>
 
 									<?php if ( has_category() ) : ?>
-										<p class="post-categories"><!-- <span><?php _e( 'In', 'lovecraft' ); ?> </span>--><?php the_category( ', ' ); ?></p>
+										<p class="post-categories" itemprop="genre"><?php the_category( ', ' ); ?></p>
 									<?php endif; ?>
 
 									<?php edit_post_link( __( 'Edit'), '<p>', '</p>' ); ?>
 
 									<?php echo do_shortcode("[mashshare]"); ?>
+
+									<meta itemprop="publisher" content="farerskiekadry.pl">
 								</div>
 
 							</div><!-- .post-header -->
