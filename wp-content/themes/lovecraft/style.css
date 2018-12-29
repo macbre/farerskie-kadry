@@ -3188,6 +3188,7 @@ p.post-author {
 display: block;
 margin-bottom: 1em;
 margin-top: -50px;
+margin-left: -50px;
 text-align: center;
 }
 

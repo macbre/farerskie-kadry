@@ -18,7 +18,7 @@
 
 							<div class="post-header">
 
-								<h1 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" itemprop="name"><?php the_title(); ?></a></h1>
+								<h1 class="post-title"><a href="<?php the_permalink(); ?>" content="<?php the_title_attribute(); ?>" itemprop="name"><?php the_title(); ?></a></h1>
 
 								<div class="post-meta">
 									<p class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span>
@@ -34,11 +34,42 @@
 										<p class="post-categories" itemprop="genre"><?php the_category( ', ' ); ?></p>
 									<?php endif; ?>
 
+<?php
+	// "Single Location" from "GEO my WP" plugin needs to be enabled
+	// All posts on a single map - https://geomywp.com/forums/topic/show-all-post-on-map-like-members/#post-57920
+	if (class_exists('GMW_Single_Post_Location')) {
+		$instance = new GMW_Single_Post_Location();
+		$data = (array) $instance->location_data;
+
+		if (!empty($data)) {
+			// permalink / @see https://www.openstreetmap.org/#map=14/56.8139/-5.0650&layers=C
+			$permalink = sprintf('//www.openstreetmap.org/#map=15/%.4f/%.4f&layers=G', $data['latitude'], $data['longitude']);
+
+			$parts = explode(',', $data['formatted_address']);
+			$address = join(',', array_slice($parts, 0, 3));
+
+			unset($data['post_content']);
+?>
+									<p class="geo" itemprop="contentLocation" itemscope itemtype="https://schema.org/Place">
+										<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+											<a href="<?= htmlspecialchars($permalink) ?>" target="_blank" title="Otwórz mapę"><?= htmlspecialchars($address) ?></a>
+											<meta itemprop="latitude" content="<?= round($data['latitude'], 4) ?>">
+											<meta itemprop="longitude" content="<?= round($data['longitude'], 4) ?>">
+										</span>
+									</p>
+<?php
+
+			echo '<!--' . json_encode($data, true) . ' -->';
+
+		}
+	}
+?>
+
 									<?php edit_post_link( __( 'Edit'), '<p>', '</p>' ); ?>
 
 									<?php echo do_shortcode("[mashshare]"); ?>
 
-									<meta itemprop="publisher" content="farerskiekadry.pl">
+									<span itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="farerskiekadry.pl"></span>
 									<meta itemprop="license" content="https://creativecommons.org/licenses/by-sa/4.0/">
 								</div>
 
