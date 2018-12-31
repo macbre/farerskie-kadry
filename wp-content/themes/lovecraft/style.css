@@ -654,18 +654,41 @@ body a,
 	color: #666;
 }
 
-.post-meta p + p:before {
-	content: "/";
-	margin: 0 5px;
-	color: #ccc;
+/* https://wojnowski.net.pl/main/index/genericons-unicode-values */
+.post-meta p:before {
+	font: 16px/1 'Genericons';
+	content: "\f428";
+	margin: 0 5px 0 15px;
+	color: #aaa;
 	font-size: 1.75em;
 	vertical-align: middle;
 	font-weight: normal;
 }
 
-.post-meta p + p.post-date:before {
+.post-meta p.post-author:before {
 	display: none;
 }
+
+.post-meta p.post-date:before {
+	content: "\f306";
+}
+
+.post-meta p.post-categories:before {
+	content: "\f301";
+}
+
+.post-meta p.geo:before {
+	content: "\f417";
+}
+
+.post-meta p.reading-time:before {
+	content: "\f303";
+}
+
+.post-meta p.post-edit:before {
+	content: "\f411";
+}
+
 
 .post-meta a { 
 	color: #ca2017; 

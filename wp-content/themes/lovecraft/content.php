@@ -38,8 +38,9 @@
 					<p class="post-categories"><!--<span><?php _e( 'In', 'lovecraft' ); ?> </span>--><?php the_category( ', ' ); ?></p>
 				<?php endif; ?>
 
-				<?php edit_post_link( 'Edit', '<p>', '</p>' ); ?>
+				<p class="reading-time">Czas czytania: <?= do_shortcode('[rt_reading_time]') ?> min</p>
 
+				<?php edit_post_link( __( 'Edit'), '<p class="post-edit">', '</p>' ); ?>
 			</div>
 
 		</div><!-- .post-header -->
