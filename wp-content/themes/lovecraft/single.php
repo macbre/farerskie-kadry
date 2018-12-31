@@ -64,6 +64,7 @@
 		}
 	}
 ?>
+									<p class="reading-time">Czas czytania: <?= do_shortcode('[rt_reading_time]') ?> min</p>
 
 									<?php edit_post_link( __( 'Edit'), '<p>', '</p>' ); ?>
 

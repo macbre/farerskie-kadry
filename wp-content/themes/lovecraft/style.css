@@ -3197,6 +3197,11 @@ margin-bottom: 1em;
 margin-top: -50px;
 margin-left: -50px;
 text-align: center;
+	
+	font-weight: normal;
+    font-size: 1.1em;
+    letter-spacing: -1px;
+    font-family: Vollkorn;
 }
 
 .post-author span {
