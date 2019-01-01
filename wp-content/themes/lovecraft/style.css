@@ -281,8 +281,7 @@ body a,
 }
 
 .main-menu {
-    text-align: left !important;
-	padding-left: 390px;
+	margin-left: 170px;
 }
 
 .header-image-overlay {
@@ -376,7 +375,7 @@ body a,
 
 .toggles,
 .mobile-search,
-.mobile-menu { display: none; }
+.mobile-menu { display: none; background: rgba(255, 255, 255, .9); }
 
 .navigation {
 	border-top: 1px solid #ddd;
@@ -3250,4 +3249,8 @@ border: none;
 	p.post-author {
 	    margin-top: -38px;
 	}
+}
+
+@media (max-width: 1000px) {
+	.navigation { height: auto }
 }
