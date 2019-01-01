@@ -18,7 +18,7 @@
 
 							<div class="post-header">
 
-								<h1 class="post-title"><a href="<?php the_permalink(); ?>" content="<?php the_title_attribute(); ?>" itemprop="name"><?php the_title(); ?></a></h1>
+								<h1 class="post-title"><a href="<?php the_permalink(); ?>" content="<?php the_title_attribute(); ?>" itemprop="headline"><?php the_title(); ?></a></h1>
 
 								<div class="post-meta">
 									<p class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span>
@@ -70,7 +70,19 @@
 
 									<?php echo do_shortcode("[mashshare]"); ?>
 
-									<span itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="farerskiekadry.pl"></span>
+									<span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+										<meta itemprop="name" content="farerskiekadry.pl">
+										<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+											<meta itemprop="url" content="https://farerskiekadry.pl/favicon.ico">
+										</span>
+									</span>
+
+<?php if (!empty($post_image)): ?>
+									<span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+										<meta itemprop="url" content="<?= htmlspecialchars($post_image) ?>">
+									</span>
+<?php endif; ?>
+
 									<meta itemprop="license" content="https://creativecommons.org/licenses/by-sa/4.0/">
 								</div>
 

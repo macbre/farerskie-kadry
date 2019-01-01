@@ -131,7 +131,7 @@
 
 		<?php if ( is_singular() && has_post_thumbnail() ) :
 			$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'post-image-cover' );
-			$post_image = $thumb['0'];
+			global $post_image; $post_image = $thumb['0'];
 			?>
 
 			<script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js" async></script>
